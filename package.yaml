@@ -1,0 +1,29 @@
+name:                type-assert
+version:             0.1.0.0
+#synopsis:
+#description:
+homepage:            https://github.com/Wizek/type-assert#readme
+license:             BSD3
+author:              Milan Nagy
+maintainer:          wizek@wizek.net
+copyright:           Milan Nagy
+category:            Web
+extra-source-files:
+- README.md
+
+dependencies:
+  - base                  >= 4.7 && < 5
+  - hspec
+  - compose-ltr
+  - haskell-src-meta
+  - template-haskell
+  # - cabal
+  # - haskell-src-exts
+
+default-extensions:
+  - QuasiQuotes
+
+executables:
+  type-assert:
+    source-dirs:      src
+    main:             Main.hs
